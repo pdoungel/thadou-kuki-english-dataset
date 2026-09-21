@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Prioritized acquisition queue. No restricted source text is copied by this registry.",
+  "candidates": [
+    {
+      "source_id": "ldcil-mother-tongue-parallel-corpus-vol1",
+      "priority": "P0",
+      "action": "obtain authorized Thado/Thadou component; record exact license and AI/model-training terms before ingestion",
+      "expected_value": "parallel English-Thadou data across grammatical categories",
+      "source": "https://data.ldcil.org/the-mother-tongue-parallel-text-corpus-of-india-vol-I"
+    },
+    {
+      "source_id": "bharatavani-thadou-dictionaries",
+      "priority": "P0",
+      "action": "obtain permission/terms for each dictionary; ingest only authorized entries",
+      "expected_value": "bilingual lexicon and technical terminology",
+      "source": "https://sec.bharatavani.in/thadou/dictionaries"
+    },
+    {
+      "source_id": "bharatavani-thadou-bhashakosha",
+      "priority": "P0",
+      "action": "obtain permission/terms for Thadou language-learning works",
+      "expected_value": "grammar, phonology, syntax and learner vocabulary",
+      "source": "https://sec.bharatavani.in/thadou/bhashakosha"
+    },
+    {
+      "source_id": "cohsem-thadou-kuki-mil",
+      "priority": "P1",
+      "action": "catalogue examination/education documents; request redistribution/training permission where required",
+      "expected_value": "modern educational register, grammar and reading vocabulary",
+      "source": "https://www.cohsem.nic.in/docs/subjects/12_Thadou_Kuki_MIL.pdf"
+    },
+    {
+      "source_id": "manipur-bsem-thadou-kuki-coursebooks",
+      "priority": "P1",
+      "action": "catalogue prescribed Thadou-Kuki course books and seek rights from publishers/societies",
+      "expected_value": "school register and contemporary written Thadou",
+      "source": "https://manipureducation.gov.in/wp-content/uploads/2018/12/Prescribed-BSEM-Text-Books-2019.pdf"
+    },
+    {
+      "source_id": "escholarship-word-formation-thadou",
+      "priority": "P1",
+      "action": "use article metadata/abstract for linguistic schema; obtain reuse permission before copying text/examples",
+      "expected_value": "morphological categories and segmentation guidance",
+      "source": "https://escholarship.org/uc/item/01p267n1"
+    },
+    {
+      "source_id": "manipur-language-planning-standard-grammar",
+      "priority": "P1",
+      "action": "locate completed Thadou-Kuki standard grammar and determine publication/access rights",
+      "expected_value": "standardized grammar categories and language examples",
+      "source": "https://www.dlpi.mn.gov.in/"
+    },
+    {
+      "source_id": "whdl-thadou-kuki-manual",
+      "priority": "P2",
+      "action": "check WHDL item-level rights/license before extraction",
+      "expected_value": "additional contemporary Thadou prose",
+      "source": "https://research.whdl.org/tcz/browse/resources/18994"
+    },
+    {
+      "source_id": "thadou-kuki-ritual-language",
+      "priority": "P2",
+      "action": "use as linguistic documentation reference; request author/publisher permission for corpus extraction",
+      "expected_value": "rare traditional/ritual register and archaic vocabulary",
+      "source": "https://benjamins.com/catalog/ltba.00017.hao"
+    }
+  ]
+}

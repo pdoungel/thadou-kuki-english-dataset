@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Thadou-Kuki Language AI Studio</title>
+<style>
+:root{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#172033;background:#f5f7fb}
+*{box-sizing:border-box}body{margin:0}.top{background:#172b4d;color:white;padding:22px 28px}.top h1{margin:0;font-size:24px}.top p{margin:5px 0 0;opacity:.82}
+nav{display:flex;gap:8px;padding:12px 28px;background:white;border-bottom:1px solid #e3e7ef;position:sticky;top:0;z-index:2}
+button,select,input,textarea{font:inherit}button{border:0;border-radius:8px;padding:9px 13px;cursor:pointer;background:#1f5eff;color:white}button.secondary{background:#e9eef7;color:#172033}button.danger{background:#b42318}
+main{max-width:1300px;margin:24px auto;padding:0 20px}.page{display:none}.page.active{display:block}
+.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.card{background:white;border:1px solid #e3e7ef;border-radius:12px;padding:18px}.num{font-size:28px;font-weight:700}.muted{color:#667085;font-size:13px}
+.toolbar{display:flex;gap:9px;flex-wrap:wrap;margin:16px 0}.toolbar input{flex:1;min-width:220px;padding:10px;border:1px solid #ccd3df;border-radius:8px}
+table{width:100%;border-collapse:collapse;background:white;border-radius:12px;overflow:hidden}th,td{padding:11px;border-bottom:1px solid #edf0f5;text-align:left;vertical-align:top}th{background:#f0f3f8;font-size:13px}
+.pill{padding:4px 8px;border-radius:99px;background:#edf2ff;font-size:12px}.editor{display:grid;grid-template-columns:1fr 1fr;gap:14px}.panel{background:white;border:1px solid #e3e7ef;border-radius:12px;padding:16px}.panel textarea{width:100%;min-height:180px;border:1px solid #ccd3df;border-radius:8px;padding:12px;resize:vertical}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px}.row select,.row input{padding:9px;border:1px solid #ccd3df;border-radius:8px}
+.notice{padding:12px;background:#fff8e6;border:1px solid #f3d58a;border-radius:9px;margin:14px 0}.source{padding:14px;border:1px solid #e3e7ef;background:white;border-radius:10px;margin:10px 0}
+@media(max-width:900px){.cards{grid-template-columns:repeat(2,1fr)}.editor{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="top"><h1>Thadou-Kuki Language AI Studio</h1><p>Build, review and prepare a bilingual Thadou-Kuki ↔ English corpus.</p></header>
+<nav>
+<button class="secondary" onclick="show('dashboard')">Dashboard</button>
+<button class="secondary" onclick="show('dataset')">Dataset</button>
+<button class="secondary" onclick="show('review')">Review</button>
+<button class="secondary" onclick="show('sources')">Sources</button>
+<button class="secondary" onclick="show('training')">Training</button>
+<button class="secondary" onclick="show('translate')">Translate</button>
+</nav>
+<main>
+<section id="dashboard" class="page active">
+<h2>Dataset Studio</h2>
+<div class="cards" id="cards"></div>
+<div class="notice">The studio supports both translation directions from the beginning: <b>Thadou-Kuki → English</b> and <b>English → Thadou-Kuki</b>. Training will only use explicitly approved/corrected data.</div>
+<button onclick="importExisting()">Import existing out/parallel.tsv</button>
+</section>
+
+<section id="dataset" class="page">
+<h2>Dataset Browser</h2>
+<div class="toolbar">
+<input id="search" placeholder="Search Thadou-Kuki, English or reference…" oninput="loadSegments()">
+<select id="status" onchange="loadSegments()"><option value="">All statuses</option><option>unreviewed</option><option>approved</option><option>corrected</option><option>rejected</option></select>
+<button onclick="loadSegments()">Refresh</button>
+</div>
+<div id="table"></div>
+</section>
+
+<section id="review" class="page">
+<h2>Human Review</h2>
+<div id="reviewEmpty" class="notice">Choose a segment from Dataset to review it.</div>
+<div id="reviewEditor" class="editor" style="display:none">
+<div class="panel"><h3>Thadou-Kuki</h3><textarea id="thadou"></textarea></div>
+<div class="panel"><h3>English</h3><textarea id="english"></textarea></div>
+<div class="panel" style="grid-column:1/-1">
+<div class="row"><label>Status <select id="reviewStatus"><option>unreviewed</option><option>approved</option><option>corrected</option><option>rejected</option></select></label>
+<label>Split <select id="split"><option>unassigned</option><option>train</option><option>validation</option><option>test</option></select></label>
+<label>Notes <input id="notes" style="min-width:300px"></label></div>
+<div class="row"><button onclick="saveReview()">Save review</button><button class="secondary" onclick="show('dataset')">Back to dataset</button></div>
+</div></div>
+</section>
+
+<section id="sources" class="page"><h2>Source & Rights Register</h2><div class="notice">Only sources with documented redistribution/model-training permission should be imported into a public training corpus. Restricted sources can remain metadata-only.</div><div id="sourcesList"></div></section>
+
+<section id="training" class="page">
+<h2>Training Preparation</h2>
+<div class="panel">
+<h3>Pipeline</h3>
+<p>Raw sources → normalization → duplicate control → human review → approved/corrected corpus → train/validation/test → tokenizer → baseline model → evaluation.</p>
+<p>Current training export is limited to reviewed rows. Model training itself will be added after corpus expansion and quality review.</p>
+<button onclick="window.open('/api/export','_blank')">Preview reviewed export</button>
+</div>
+</section>
+
+<section id="translate" class="page">
+<h2>Translation Workspace</h2>
+<div class="panel">
+<div class="row"><label>Direction <select id="direction"><option value="thadou_to_english">Thadou-Kuki → English</option><option value="english_to_thadou">English → Thadou-Kuki</option></select></label></div>
+<textarea id="translationInput" style="width:100%;min-height:170px;margin-top:12px;padding:12px;border:1px solid #ccd3df;border-radius:8px" placeholder="Enter text…"></textarea>
+<div class="row"><button onclick="runTranslation()">Translate</button></div>
+<div id="translationOutput" class="notice" style="min-height:80px">Model not connected yet. This workspace is ready for the trained model/API.</div>
+</div>
+</section>
+</main>
+<script>
+let currentId=null;
+const $=id=>document.getElementById(id);
+async function api(path,opt){const r=await fetch(path,opt);if(!r.ok)throw new Error(await r.text());return r.json();}
+function show(id){document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));$(id).classList.add('active');if(id==='dashboard')loadStats();if(id==='dataset')loadSegments();if(id==='sources')loadSources();}
+async function loadStats(){const s=await api('/api/stats');$('cards').innerHTML=[['segments',s.segments],['reviewed',s.reviewed],['pending',s.pending],['rejected',s.rejected],['sources',s.sources]].map(x=>'<div class="card"><div class="muted">'+x[0]+'</div><div class="num">'+x[1]+'</div></div>').join('');}
+async function loadSegments(){const q=encodeURIComponent($('search').value);const status=encodeURIComponent($('status').value);const d=await api('/api/segments?q='+q+'&status='+status);$('table').innerHTML='<table><thead><tr><th>ID</th><th>Thadou-Kuki</th><th>English</th><th>Source</th><th>Status</th><th>Action</th></tr></thead><tbody>'+d.items.map(x=>'<tr><td>'+x.id+'</td><td>'+esc(x.thadou)+'</td><td>'+esc(x.english)+'</td><td>'+esc(x.source_id)+'</td><td><span class="pill">'+x.status+'</span></td><td><button onclick="openReview('+x.id+')">Review</button></td></tr>').join('')+'</tbody></table>'+(d.items.length?'':'<div class="notice">No segments found.</div>');}
+async function openReview(id){currentId=id;const x=await api('/api/segments/'+id);$('thadou').value=x.thadou;$('english').value=x.english;$('reviewStatus').value=x.status;$('split').value=x.split;$('notes').value=x.notes;$('reviewEmpty').style.display='none';$('reviewEditor').style.display='grid';show('review');}
+async function saveReview(){const payload={thadou:$('thadou').value,english:$('english').value,status:$('reviewStatus').value,split:$('split').value,notes:$('notes').value};await api('/api/segments/'+currentId,{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});alert('Review saved.');show('dataset');}
+async function loadSources(){const rows=await api('/api/sources');$('sourcesList').innerHTML=rows.map(x=>'<div class="source"><b>'+esc(x.source_id)+'</b><h3>'+esc(x.title)+'</h3><div>'+esc(x.provider)+' · '+esc(x.license)+' · '+esc(x.rights_status)+'</div><div>'+esc(x.canonical_url)+'</div><p>'+esc(x.notes)+'</p></div>').join('')||'<div class="notice">No sources registered in the app database yet. Repository metadata remains the authoritative source register.</div>';}
+async function importExisting(){try{const r=await api('/api/import-existing',{method:'POST'});alert('Imported '+r.inserted+' rows; skipped '+r.duplicates+' duplicates.');loadStats();}catch(e){alert(e.message)}}
+async function runTranslation(){$('translationOutput').textContent='Translation model/API is not connected yet. The direction selected is '+$('direction').selectedOptions[0].text+'.';}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));}
+loadStats();
+</script>
+</body></html>

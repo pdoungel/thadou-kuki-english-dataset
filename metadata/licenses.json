@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "policy": {
+    "default": "UNKNOWN",
+    "public_release_requires": ["OPEN_LICENSE", "PUBLIC_DOMAIN"],
+    "restricted_source_handling": "metadata-and-acquisition-instructions-only"
+  },
+  "statuses": {
+    "OPEN_LICENSE": "Source terms explicitly permit intended reuse.",
+    "PUBLIC_DOMAIN": "Copyright status is verified public domain.",
+    "PERMITTED_RESEARCH": "Reuse is limited by explicit research or educational permission.",
+    "PERMISSION_REQUIRED": "Permission must be obtained before copying, redistributing or training.",
+    "METADATA_ONLY": "Keep provenance metadata but not source text/audio.",
+    "UNKNOWN": "Rights are not yet established."
+  }
+}

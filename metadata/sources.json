@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0",
+  "project": "thadou-kuki-english-dataset",
+  "language": {
+    "name": "Thadou-Kuki",
+    "iso_639_3": "tcz",
+    "aliases": ["Thadou", "Thado", "Thadou-Kuki", "Kuki"]
+  },
+  "sources": [
+    {
+      "source_id": "ebible-chongthu",
+      "title": "Pathen Lekhabu Theng / Chongthu Thadou Bible",
+      "provider": "eBible / Chongthu Bible Translation Team",
+      "url": "https://ebible.org/tcz/",
+      "data_type": ["parallel", "monolingual", "readaloud"],
+      "rights_status": "OPEN_LICENSE",
+      "license": "CC BY-SA 4.0",
+      "repository_policy": "included"
+    },
+    {
+      "source_id": "english-web",
+      "title": "World English Bible",
+      "provider": "World English Bible",
+      "url": "https://worldenglish.bible/",
+      "data_type": ["parallel"],
+      "rights_status": "PUBLIC_DOMAIN",
+      "repository_policy": "included"
+    },
+    {
+      "source_id": "english-kjv",
+      "title": "King James Version",
+      "provider": "Public-domain edition",
+      "url": "https://www.gutenberg.org/ebooks/10",
+      "data_type": ["parallel"],
+      "rights_status": "PUBLIC_DOMAIN",
+      "repository_policy": "included"
+    },
+    {
+      "source_id": "gospelgo-thadou",
+      "title": "Kuki / Thadou Bible",
+      "provider": "GospelGo",
+      "url": "https://gospelgo.com/a/kuki_bible.htm",
+      "data_type": ["parallel", "monolingual"],
+      "rights_status": "UNKNOWN",
+      "repository_policy": "legacy-included-review-required",
+      "notes": "Existing source; confirm rights before future redistribution or model release."
+    },
+    {
+      "source_id": "ldcil-mother-tongue-parallel-corpus-vol1",
+      "title": "The Mother Tongue Parallel Text Corpus of India Vol. I",
+      "provider": "Central Institute of Indian Languages / LDC-IL",
+      "catalogue_number": "1501",
+      "url": "https://data.ldcil.org/the-mother-tongue-parallel-text-corpus-of-india-vol-I",
+      "data_type": ["parallel"],
+      "language_component": "Thado/Thadou",
+      "rights_status": "PERMISSION_REQUIRED",
+      "repository_policy": "metadata-only-until-authorized",
+      "notes": "Official catalogue lists Thado/Thadou. Obtain through the authorized route and verify redistribution and model-training terms."
+    },
+    {
+      "source_id": "bharatavani-thadou-bhashakosha",
+      "title": "Bharatavani Thadou Bhashakosha",
+      "provider": "Ministry of Education / CIIL",
+      "url": "https://sec.bharatavani.in/thadou/bhashakosha",
+      "data_type": ["grammar", "lexicon", "language-learning"],
+      "rights_status": "PERMISSION_REQUIRED",
+      "repository_policy": "metadata-only-until-authorized"
+    },
+    {
+      "source_id": "bharatavani-thadou-dictionaries",
+      "title": "Bharatavani Thadou Dictionaries",
+      "provider": "Ministry of Education / CIIL",
+      "url": "https://sec.bharatavani.in/thadou/dictionaries",
+      "data_type": ["lexicon", "terminology"],
+      "rights_status": "PERMISSION_REQUIRED",
+      "repository_policy": "metadata-only-until-authorized"
+    },
+    {
+      "source_id": "bharatavani-thadou-jnanakosha",
+      "title": "Bharatavani Thadou Jnanakosha",
+      "provider": "Ministry of Education / CIIL and listed content partners",
+      "url": "https://sec.bharatavani.in/thadou/jnanakosha",
+      "data_type": ["literature", "culture", "history", "monolingual"],
+      "rights_status": "PERMISSION_REQUIRED",
+      "repository_policy": "metadata-only-until-authorized"
+    },
+    {
+      "source_id": "bharatavani-thadou-textbooks",
+      "title": "Bharatavani Thadou-Kuki textbooks",
+      "provider": "Ministry of Education / CIIL and Thadou-Kuki Literature Society",
+      "url": "https://sec.bharatavani.in/home/textbook",
+      "data_type": ["textbook", "education", "monolingual"],
+      "rights_status": "PERMISSION_REQUIRED",
+      "repository_policy": "metadata-only-until-authorized"
+    },
+    {
+      "source_id": "bharatavani-thadou-content-partners",
+      "title": "Bharatavani Thadou Content Partners",
+      "provider": "Bharatavani / CIIL",
+      "url": "https://sec.bharatavani.in/thadou/contentpartner",
+      "data_type": ["provenance"],
+      "rights_status": "METADATA_ONLY",
+      "repository_policy": "metadata-only"
+    },
+    {
+      "source_id": "bharatavani-thadou-media",
+      "title": "Bharatavani Thadou Multimedia",
+      "provider": "Ministry of Education / CIIL",
+      "url": "https://sec.bharatavani.in/thadou/media",
+      "data_type": ["audio", "video", "multimedia"],
+      "rights_status": "PERMISSION_REQUIRED",
+      "repository_policy": "metadata-only-until-authorized"
+    },
+    {
+      "source_id": "scriptureearth-tcz",
+      "title": "Scripture Earth Thadou-Kuki resources",
+      "provider": "Scripture Earth / contributing organizations",
+      "url": "https://www.scriptureearth.org/00i-Scripture_Index.php?iso_c=TCZ",
+      "data_type": ["text", "audio", "video"],
+      "rights_status": "PERMISSION_REQUIRED",
+      "repository_policy": "metadata-only-until-authorized"
+    },
+    {
+      "source_id": "global-recordings-tcz",
+      "title": "Global Recordings Network — Thadou Kuki",
+      "provider": "Global Recordings Network",
+      "url": "https://globalrecordings.net/en/language/tcz",
+      "data_type": ["audio"],
+      "rights_status": "PERMISSION_REQUIRED",
+      "repository_policy": "metadata-only-until-authorized"
+    },
+    {
+      "source_id": "omniglot-thadou",
+      "title": "Thadou language/writing reference",
+      "provider": "Omniglot",
+      "url": "https://www.omniglot.com/writing/thadou.htm",
+      "data_type": ["reference"],
+      "rights_status": "PERMISSION_REQUIRED",
+      "repository_policy": "metadata-only"
+    }
+  ]
+}

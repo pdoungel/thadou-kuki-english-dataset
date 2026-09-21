@@ -50,3 +50,10 @@ Bible-only data gives archaic/religious register. For conversational quality add
 
 Could not auto-download (do by hand in a browser): BSI PDF on bibliamundi (503/SSL), mchip PDF (dead),
 globalrecordings.net (403), UNT book (viewer only), YouVersion THADBSI (copyright, ask BSI).
+
+
+## Language AI Studio
+
+A local application is included under `app/` for corpus curation and future model development. It is designed from the start for both **Thadou-Kuki → English** and **English → Thadou-Kuki**.
+
+See [app/README.md](app/README.md) for setup. The MVP provides dataset browsing, human review/correction, source-rights metadata, safe import, reviewed-data export, and a translation-workspace scaffold.

@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Publicly licensed Thadou references that can support metadata, linguistic profiling, or separately licensed derived resources. These are not mixed into the main parallel corpus unless their individual data license permits it.",
+  "sources": [
+    {
+      "source_id": "wals-thadou",
+      "title": "WALS Online: Language Thadou",
+      "url": "https://wals.info/languoid/lect/wals_code_thd",
+      "license": "CC BY 4.0",
+      "rights_status": "OPEN_LICENSE",
+      "data_type": [
+        "linguistic_reference",
+        "typology"
+      ],
+      "policy": "Use with attribution for derived structured metadata; underlying cited publications retain their own rights."
+    },
+    {
+      "source_id": "glottolog-thado-chin",
+      "title": "Glottolog: Thado Chin",
+      "url": "https://glottolog.org/resource/languoid/id/thad1238",
+      "license": "CC BY 4.0",
+      "rights_status": "OPEN_LICENSE",
+      "data_type": [
+        "language_metadata",
+        "bibliography",
+        "classification"
+      ],
+      "policy": "Use for language metadata and bibliography with attribution; cited publications retain their own rights."
+    },
+    {
+      "source_id": "wikimedia-thadou-script-image",
+      "title": "Thadou written in Meitei script",
+      "url": "https://commons.wikimedia.org/wiki/File:%22Thadou%22_written_in_Meitei_script.jpg",
+      "license": "Public domain",
+      "rights_status": "PUBLIC_DOMAIN",
+      "data_type": [
+        "orthography_reference",
+        "image"
+      ],
+      "policy": "Reference only; no parallel text contribution."
+    },
+    {
+      "source_id": "wikimedia-historical-thadou-forms",
+      "title": "Historical comparison of Meitei, Thado and related linguistic forms",
+      "url": "https://commons.wikimedia.org/wiki/File:Comparison_of_Meitei_language_(Manipuri_language)_with_Thado_(Thadou_or_Kuki),_Lushei_(Lushai_or_Mizo),_Rangkhol_%26_Khami_linguistic_forms.jpg",
+      "license": "Public domain mark / public-domain scan",
+      "rights_status": "PUBLIC_DOMAIN",
+      "data_type": [
+        "historical_linguistic_reference",
+        "image"
+      ],
+      "policy": "Potential source for manual historical lexicon extraction after source-image review; preserve provenance for every extracted item."
+    }
+  ]
+}

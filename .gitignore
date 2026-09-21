@@ -1,3 +1,1 @@
-__pycache__/
-*.pyc
-.venv/
+__pycache__/\n*.pyc\n.venv/\napp/data/*.db\napp/data/*.db-*\n

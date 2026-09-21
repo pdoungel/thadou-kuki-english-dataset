@@ -81,6 +81,34 @@ def init_db() -> None:
             CREATE INDEX IF NOT EXISTS idx_segments_source ON segments(source_id);
         """
         )
+    sync_metadata_sources()
+
+
+def sync_metadata_sources() -> None:
+    metadata = ROOT / "metadata" / "sources.json"
+    if not metadata.exists():
+        return
+    try:
+        payload = json.loads(metadata.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return
+    records = payload if isinstance(payload, list) else payload.get("sources", [])
+    with connect() as con:
+        for item in records:
+            source_id = item.get("source_id") or item.get("id")
+            if not source_id:
+                continue
+            con.execute(
+                """INSERT INTO sources(source_id,title,provider,license,rights_status,canonical_url,notes)
+                   VALUES(?,?,?,?,?,?,?)
+                   ON CONFLICT(source_id) DO UPDATE SET
+                     title=excluded.title, provider=excluded.provider, license=excluded.license,
+                     rights_status=excluded.rights_status, canonical_url=excluded.canonical_url,
+                     notes=excluded.notes""",
+                (source_id, item.get("title", ""), item.get("provider", item.get("publisher", "")),
+                 item.get("license", ""), item.get("rights_status", item.get("rights", "UNKNOWN")),
+                 item.get("url", item.get("canonical_url", "")), item.get("notes", "")),
+            )
 
 
 class SegmentUpdate(BaseModel):

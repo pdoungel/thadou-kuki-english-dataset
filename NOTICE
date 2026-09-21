@@ -1,0 +1,19 @@
+# NOTICE
+
+## Project
+
+Thadou-Kuki ↔ English Dataset
+
+Repository: https://github.com/pdoungel/thadou-kuki-english-dataset
+
+This repository is a collection and processing project. Individual files may have different copyright owners and licenses.
+
+The repository's presence of a file does not change the copyright or license terms of its source.
+
+Before redistributing a source, publishing a derivative dataset, or training or releasing a model, consult metadata/sources.json and verify source-specific rights.
+
+Restricted or uncertain sources should be represented by metadata and acquisition instructions rather than copied into the public dataset.
+
+For sources whose terms require attribution or share-alike treatment, retain the required attribution and license notices in downstream releases.
+
+The source registry is a living research record. UNKNOWN or PERMISSION_REQUIRED is intentionally conservative and is not a legal opinion.

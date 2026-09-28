@@ -12,6 +12,35 @@ The existing generated corpus is built from eBible Chongthu Thadou Bible materia
 
 Do not interpret the presence of a source file as proof that its contents may be redistributed or used for every downstream purpose. Rights are tracked per source.
 
+## THADBSI ↔ NIV alignment (metadata-only)
+
+A second corpus lives under `data/`: 31,087 verse pairs aligning the Thadou-Kuki **THADBSI**
+edition (bible.com version 1879, Bible Society of India) with the English **NIV** (bible.com
+version 111, Biblica), across 66 books and 1,189 chapters. Collection, normalization,
+alignment, verification and reporting are implemented in `bible_scraper/` and documented in
+`docs/PIPELINE.md`; fields are described in `docs/DATA_SCHEMA.md`.
+
+Under the data-governance rule above, this source is classified
+`rights_status: PERMISSION_REQUIRED`, `repository_policy: metadata-only` in
+`metadata/sources.json`. Therefore:
+
+- **Published:** references and canonical structure, alignment statuses and reasons, sha256
+  content hashes, the 31,104-record audit trail, verification results, quality reports,
+  checksums, manifests, split assignment (book codes), code and tests.
+- **Withheld:** THADBSI verse text, NIV verse text, raw chapter captures, normalized records,
+  the aligned/ML JSONL files and the three split files. These are local-only release
+  artifacts, blocked by `.gitignore`.
+- The alignment itself is publishable because it contains no text: every audit record carries
+  hashes and a reason instead of verse content.
+
+Three artifacts retain the same 7-verse spot-check excerpt as verification evidence —
+`data/audit/verification.json`, `reports/quality_report.json` and the `## Manual spot checks`
+table in `reports/quality_report.md`. This is documented explicitly in `docs/DATA_ACCESS.md` §4.
+
+The corpus remains usable for research on a local copy, and can be rebuilt from the public
+pages with `python -m bible_scraper all` subject to the same rights position as any other
+restricted source.
+
 ## Expansion priorities
 
 1. LDC-IL Mother Tongue Parallel Text Corpus of India Vol. I — Thado/Thadou component.

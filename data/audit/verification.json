@@ -1,0 +1,308 @@
+{
+  "generated_at": "2026-09-27T14:15:59+00:00",
+  "ok": true,
+  "complete": true,
+  "checks": {
+    "manifests_THADBSI": {
+      "ok": true,
+      "detail": "chapters=1189"
+    },
+    "manifests_NIV": {
+      "ok": true,
+      "detail": "chapters=1189"
+    },
+    "book_mapping": {
+      "ok": true,
+      "detail": "/Volumes/New Volume/thkvoice/bible/data/manifests/book_mapping.json"
+    },
+    "raw_captures": {
+      "ok": true,
+      "detail": {
+        "THADBSI": {
+          "chapters": 1189,
+          "verses": 31104,
+          "missing_from_manifest": 0
+        },
+        "NIV": {
+          "chapters": 1189,
+          "verses": 31103,
+          "missing_from_manifest": 0
+        }
+      }
+    },
+    "normalized_deduplicated": {
+      "ok": true,
+      "detail": {
+        "THADBSI": {
+          "verses": 31104,
+          "unique": 31104,
+          "duplicates": 0
+        },
+        "NIV": {
+          "verses": 31103,
+          "unique": 31103,
+          "duplicates": 0
+        }
+      }
+    },
+    "parallel_schema": {
+      "ok": true,
+      "detail": {
+        "rows": 31087,
+        "errors": [],
+        "error_count": 0
+      }
+    },
+    "ml_schema": {
+      "ok": true,
+      "detail": {
+        "rows": 31087,
+        "errors": [],
+        "error_count": 0
+      }
+    },
+    "no_duplicate_ids": {
+      "ok": true,
+      "detail": {
+        "duplicates": [],
+        "count": 0
+      }
+    },
+    "audit_reconciles": {
+      "ok": true,
+      "detail": {
+        "audit_status_counts": {
+          "aligned": 31087,
+          "missing_niv": 17
+        },
+        "aligned_in_audit": 31087,
+        "parallel_rows": 31087
+      }
+    },
+    "split_whole_books": {
+      "ok": true,
+      "detail": {
+        "books": 66,
+        "assigned": 66,
+        "overlap": [],
+        "counts": {
+          "train": {
+            "verses": 27279,
+            "books": 55
+          },
+          "validation": {
+            "verses": 2869,
+            "books": 7
+          },
+          "test": {
+            "verses": 939,
+            "books": 4
+          }
+        }
+      }
+    },
+    "uncertain_excluded_from_corpus": {
+      "ok": true,
+      "detail": {
+        "uncertain_audit_records": 0,
+        "uncertain_chapters": 0,
+        "uncertain_rows_leaked_into_corpus": 0
+      }
+    },
+    "spot_checks": {
+      "ok": true,
+      "detail": {
+        "expected": [
+          "GEN.1.1",
+          "GEN.3.16",
+          "PSA.23.1",
+          "MAT.1.1",
+          "JHN.3.16",
+          "ROM.8.28",
+          "REV.22.21"
+        ],
+        "missing": []
+      }
+    }
+  },
+  "counts": {
+    "discovered_chapters": {
+      "THADBSI": 1189,
+      "NIV": 1189
+    },
+    "extracted_chapters": {
+      "THADBSI": 1189,
+      "NIV": 1189
+    },
+    "normalized_verses": {
+      "THADBSI": 31104,
+      "NIV": 31103
+    },
+    "aligned_pairs": 31087,
+    "ml_pairs": 31087,
+    "audit_records": 31104,
+    "missing_thadou": 0,
+    "missing_niv": 17,
+    "duplicate_thadou": 0,
+    "duplicate_niv": 0,
+    "language_uncertain": 0,
+    "extraction_error": 0,
+    "failed_raw_files": 0,
+    "failed_chapters": {},
+    "uncertain_chapters": 0,
+    "empty_verses_in_raw": 16
+  },
+  "uncertain_chapters": [],
+  "empty_verses_in_raw": [
+    {
+      "file": "/Volumes/New Volume/thkvoice/bible/data/raw/niv/ACT/008.json",
+      "empty_verses": [
+        "ACT.8.37"
+      ]
+    },
+    {
+      "file": "/Volumes/New Volume/thkvoice/bible/data/raw/niv/ACT/015.json",
+      "empty_verses": [
+        "ACT.15.34"
+      ]
+    },
+    {
+      "file": "/Volumes/New Volume/thkvoice/bible/data/raw/niv/ACT/024.json",
+      "empty_verses": [
+        "ACT.24.7"
+      ]
+    },
+    {
+      "file": "/Volumes/New Volume/thkvoice/bible/data/raw/niv/ACT/028.json",
+      "empty_verses": [
+        "ACT.28.29"
+      ]
+    },
+    {
+      "file": "/Volumes/New Volume/thkvoice/bible/data/raw/niv/JHN/005.json",
+      "empty_verses": [
+        "JHN.5.4"
+      ]
+    },
+    {
+      "file": "/Volumes/New Volume/thkvoice/bible/data/raw/niv/LUK/017.json",
+      "empty_verses": [
+        "LUK.17.36"
+      ]
+    },
+    {
+      "file": "/Volumes/New Volume/thkvoice/bible/data/raw/niv/LUK/023.json",
+      "empty_verses": [
+        "LUK.23.17"
+      ]
+    },
+    {
+      "file": "/Volumes/New Volume/thkvoice/bible/data/raw/niv/MAT/017.json",
+      "empty_verses": [
+        "MAT.17.21"
+      ]
+    },
+    {
+      "file": "/Volumes/New Volume/thkvoice/bible/data/raw/niv/MAT/018.json",
+      "empty_verses": [
+        "MAT.18.11"
+      ]
+    },
+    {
+      "file": "/Volumes/New Volume/thkvoice/bible/data/raw/niv/MAT/023.json",
+      "empty_verses": [
+        "MAT.23.14"
+      ]
+    },
+    {
+      "file": "/Volumes/New Volume/thkvoice/bible/data/raw/niv/MRK/007.json",
+      "empty_verses": [
+        "MRK.7.16"
+      ]
+    },
+    {
+      "file": "/Volumes/New Volume/thkvoice/bible/data/raw/niv/MRK/009.json",
+      "empty_verses": [
+        "MRK.9.44",
+        "MRK.9.46"
+      ]
+    },
+    {
+      "file": "/Volumes/New Volume/thkvoice/bible/data/raw/niv/MRK/011.json",
+      "empty_verses": [
+        "MRK.11.26"
+      ]
+    },
+    {
+      "file": "/Volumes/New Volume/thkvoice/bible/data/raw/niv/MRK/015.json",
+      "empty_verses": [
+        "MRK.15.28"
+      ]
+    },
+    {
+      "file": "/Volumes/New Volume/thkvoice/bible/data/raw/niv/ROM/016.json",
+      "empty_verses": [
+        "ROM.16.24"
+      ]
+    }
+  ],
+  "spot_checks": [
+    {
+      "reference": "GEN.1.1",
+      "found": true,
+      "thadou_kuki": "Atilin Pathen'in van le leiset aseme.",
+      "english": "In the beginning God created the heavens and the earth.",
+      "thadou_url": "https://www.bible.com/bible/1879/GEN.1.THADBSI",
+      "niv_url": "https://www.bible.com/bible/111/GEN.1.NIV"
+    },
+    {
+      "reference": "GEN.3.16",
+      "found": true,
+      "thadou_kuki": "Aman numei nu jah-a chun, Keiman nalung gentheina le nanaovopna chu nasatah-a kapunsah ding; nangman nat thoh gim tah-a cha nahin ding; nalung ngaichat chu na inneipu-a ding hiding, chule aman nachunga vai ahomding ahi, ati.",
+      "english": "To the woman he said, “I will make your pains in childbearing very severe; with painful labor you will give birth to children. Your desire will be for your husband, and he will rule over you.”",
+      "thadou_url": "https://www.bible.com/bible/1879/GEN.3.THADBSI",
+      "niv_url": "https://www.bible.com/bible/111/GEN.3.NIV"
+    },
+    {
+      "reference": "PSA.23.1",
+      "found": true,
+      "thadou_kuki": "Pakai chu kelngoi chinna eichingpa ahin, keima lhasamponge.",
+      "english": "The Lord is my shepherd, I lack nothing.",
+      "thadou_url": "https://www.bible.com/bible/1879/PSA.23.THADBSI",
+      "niv_url": "https://www.bible.com/bible/111/PSA.23.NIV"
+    },
+    {
+      "reference": "MAT.1.1",
+      "found": true,
+      "thadou_kuki": "Abraham chapa, David chapa, Jesu Christa khangui thubu.",
+      "english": "This is the genealogy of Jesus the Messiah the son of David, the son of Abraham:",
+      "thadou_url": "https://www.bible.com/bible/1879/MAT.1.THADBSI",
+      "niv_url": "https://www.bible.com/bible/111/MAT.1.NIV"
+    },
+    {
+      "reference": "JHN.3.16",
+      "found": true,
+      "thadou_kuki": "Ajeh chu Pathen'in hibanga hi vannoi angailut jeh-in, Achapa changkhat chu apetan ahi; koi hijongle Ama tahsan chan chun mangthah louva tonsot hinkemlou anei ahitai.",
+      "english": "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.",
+      "thadou_url": "https://www.bible.com/bible/1879/JHN.3.THADBSI",
+      "niv_url": "https://www.bible.com/bible/111/JHN.3.NIV"
+    },
+    {
+      "reference": "ROM.8.28",
+      "found": true,
+      "thadou_kuki": "Ahin Pathen ngailuho chengse, ama lunggot lam doltah-a kikouho ding vang chun, thiljouse hin aphat nadingu atongkhom sohkeije, ti chu iheuve.",
+      "english": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose.",
+      "thadou_url": "https://www.bible.com/bible/1879/ROM.8.THADBSI",
+      "niv_url": "https://www.bible.com/bible/111/ROM.8.NIV"
+    },
+    {
+      "reference": "REV.22.21",
+      "found": true,
+      "thadou_kuki": "I-Pakaiyu Jesu Christa milungset nachun, mithengte nabon chaovin umpiuvin, Amen.",
+      "english": "The grace of the Lord Jesus be with God’s people. Amen.",
+      "thadou_url": "https://www.bible.com/bible/1879/REV.22.THADBSI",
+      "niv_url": "https://www.bible.com/bible/111/REV.22.NIV"
+    }
+  ],
+  "problems": []
+}

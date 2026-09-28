@@ -62,6 +62,29 @@
       "notes": "Existing source; confirm rights before future redistribution or model release."
     },
     {
+      "source_id": "yousversion-thadbsi",
+      "title": "Pathen Thutheng BU (BSI) — THADBSI (bible.com version 1879)",
+      "provider": "Bible Society of India / YouVersion (bible.com)",
+      "url": "https://www.bible.com/versions/1879-thadbsi-pathen-thutheng-bu-bsi",
+      "data_type": [
+        "parallel"
+      ],
+      "rights_status": "PERMISSION_REQUIRED",
+      "repository_policy": "metadata-only"
+    },
+    {
+      "source_id": "biblica-niv",
+      "title": "New International Version (NIV) — bible.com version 111",
+      "provider": "Biblica, Inc.® / YouVersion (bible.com)",
+      "url": "https://www.bible.com/versions/111-niv-new-international-version",
+      "data_type": [
+        "parallel",
+        "reference"
+      ],
+      "rights_status": "PERMISSION_REQUIRED",
+      "repository_policy": "metadata-only"
+    },
+    {
       "source_id": "ldcil-mother-tongue-parallel-corpus-vol1",
       "title": "The Mother Tongue Parallel Text Corpus of India Vol. I",
       "provider": "Central Institute of Indian Languages / LDC-IL",

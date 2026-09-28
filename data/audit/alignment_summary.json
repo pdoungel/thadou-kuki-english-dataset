@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-09-27T14:10:10+00:00",
+  "counts": {
+    "aligned": 31087,
+    "missing_thadou": 0,
+    "missing_niv": 17,
+    "duplicate_thadou": 0,
+    "duplicate_niv": 0,
+    "language_uncertain": 0,
+    "extraction_error": 0
+  },
+  "parallel_verses": 31087,
+  "ml_verses": 31087,
+  "audit_records": 31104,
+  "contaminated_chapters": [],
+  "files": {
+    "parallel": "/Volumes/New Volume/thkvoice/bible/data/aligned/thadou_kuki_niv_parallel.jsonl",
+    "ml": "/Volumes/New Volume/thkvoice/bible/data/aligned/thadou_kuki_niv_ml.jsonl",
+    "audit": "/Volumes/New Volume/thkvoice/bible/data/audit/alignment_audit.jsonl"
+  },
+  "split_counts": {
+    "train": {
+      "verses": 27279,
+      "books": 55
+    },
+    "validation": {
+      "verses": 2869,
+      "books": 7
+    },
+    "test": {
+      "verses": 939,
+      "books": 4
+    }
+  }
+}

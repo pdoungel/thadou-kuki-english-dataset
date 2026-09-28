@@ -1,0 +1,932 @@
+{
+  "generated_at": "2026-09-27T10:50:55+00:00",
+  "source": "canonical book codes from Bible.com URLs; display names are labels only",
+  "canonical_order": [
+    "GEN",
+    "EXO",
+    "LEV",
+    "NUM",
+    "DEU",
+    "JOS",
+    "JDG",
+    "RUT",
+    "1SA",
+    "2SA",
+    "1KI",
+    "2KI",
+    "1CH",
+    "2CH",
+    "EZR",
+    "NEH",
+    "EST",
+    "JOB",
+    "PSA",
+    "PRO",
+    "ECC",
+    "SNG",
+    "ISA",
+    "JER",
+    "LAM",
+    "EZK",
+    "DAN",
+    "HOS",
+    "JOL",
+    "AMO",
+    "OBA",
+    "JON",
+    "MIC",
+    "NAM",
+    "HAB",
+    "ZEP",
+    "HAG",
+    "ZEC",
+    "MAL",
+    "MAT",
+    "MRK",
+    "LUK",
+    "JHN",
+    "ACT",
+    "ROM",
+    "1CO",
+    "2CO",
+    "GAL",
+    "EPH",
+    "PHP",
+    "COL",
+    "1TH",
+    "2TH",
+    "1TI",
+    "2TI",
+    "TIT",
+    "PHM",
+    "HEB",
+    "JAS",
+    "1PE",
+    "2PE",
+    "1JN",
+    "2JN",
+    "3JN",
+    "JUD",
+    "REV"
+  ],
+  "books": {
+    "GEN": {
+      "thadbsi_name": "Semtilbu",
+      "english_name": "Genesis",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 50,
+        "NIV": 50
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/GEN.INTRO1.THADBSI",
+        "NIV": "/bible/111/GEN.INTRO1.NIV"
+      }
+    },
+    "EXO": {
+      "thadbsi_name": "Potdohbu",
+      "english_name": "Exodus",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 40,
+        "NIV": 40
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/EXO.INTRO1.THADBSI",
+        "NIV": "/bible/111/EXO.INTRO1.NIV"
+      }
+    },
+    "LEV": {
+      "thadbsi_name": "Thempudan",
+      "english_name": "Leviticus",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 27,
+        "NIV": 27
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/LEV.INTRO1.THADBSI",
+        "NIV": "/bible/111/LEV.INTRO1.NIV"
+      }
+    },
+    "NUM": {
+      "thadbsi_name": "Minbu",
+      "english_name": "Numbers",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 36,
+        "NIV": 36
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/NUM.INTRO1.THADBSI",
+        "NIV": "/bible/111/NUM.INTRO1.NIV"
+      }
+    },
+    "DEU": {
+      "thadbsi_name": "Danbu",
+      "english_name": "Deuteronomy",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 34,
+        "NIV": 34
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/DEU.INTRO1.THADBSI",
+        "NIV": "/bible/111/DEU.INTRO1.NIV"
+      }
+    },
+    "JOS": {
+      "thadbsi_name": "Joshua",
+      "english_name": "Joshua",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 24,
+        "NIV": 24
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/JOS.INTRO1.THADBSI",
+        "NIV": "/bible/111/JOS.INTRO1.NIV"
+      }
+    },
+    "JDG": {
+      "thadbsi_name": "Thutanho",
+      "english_name": "Judges",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 21,
+        "NIV": 21
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/JDG.INTRO1.THADBSI",
+        "NIV": "/bible/111/JDG.INTRO1.NIV"
+      }
+    },
+    "RUT": {
+      "thadbsi_name": "Ruth",
+      "english_name": "Ruth",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 4,
+        "NIV": 4
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/RUT.INTRO1.THADBSI",
+        "NIV": "/bible/111/RUT.INTRO1.NIV"
+      }
+    },
+    "1SA": {
+      "thadbsi_name": "1 Samuel",
+      "english_name": "1 Samuel",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 31,
+        "NIV": 31
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/1SA.INTRO1.THADBSI",
+        "NIV": "/bible/111/1SA.INTRO1.NIV"
+      }
+    },
+    "2SA": {
+      "thadbsi_name": "2 Samuel",
+      "english_name": "2 Samuel",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 24,
+        "NIV": 24
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/2SA.INTRO1.THADBSI",
+        "NIV": "/bible/111/2SA.INTRO1.NIV"
+      }
+    },
+    "1KI": {
+      "thadbsi_name": "1 Lengte",
+      "english_name": "1 Kings",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 22,
+        "NIV": 22
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/1KI.INTRO1.THADBSI",
+        "NIV": "/bible/111/1KI.INTRO1.NIV"
+      }
+    },
+    "2KI": {
+      "thadbsi_name": "2 Lengte",
+      "english_name": "2 Kings",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 25,
+        "NIV": 25
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/2KI.INTRO1.THADBSI",
+        "NIV": "/bible/111/2KI.INTRO1.NIV"
+      }
+    },
+    "1CH": {
+      "thadbsi_name": "1 Thusimbu",
+      "english_name": "1 Chronicles",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 29,
+        "NIV": 29
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/1CH.INTRO1.THADBSI",
+        "NIV": "/bible/111/1CH.INTRO1.NIV"
+      }
+    },
+    "2CH": {
+      "thadbsi_name": "2 Thusimbu",
+      "english_name": "2 Chronicles",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 36,
+        "NIV": 36
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/2CH.INTRO1.THADBSI",
+        "NIV": "/bible/111/2CH.INTRO1.NIV"
+      }
+    },
+    "EZR": {
+      "thadbsi_name": "Ezra",
+      "english_name": "Ezra",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 10,
+        "NIV": 10
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/EZR.INTRO1.THADBSI",
+        "NIV": "/bible/111/EZR.INTRO1.NIV"
+      }
+    },
+    "NEH": {
+      "thadbsi_name": "NEHEMIAH",
+      "english_name": "Nehemiah",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 13,
+        "NIV": 13
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/NEH.INTRO1.THADBSI",
+        "NIV": "/bible/111/NEH.INTRO1.NIV"
+      }
+    },
+    "EST": {
+      "thadbsi_name": "Esther",
+      "english_name": "Esther",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 10,
+        "NIV": 10
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/EST.INTRO1.THADBSI",
+        "NIV": "/bible/111/EST.INTRO1.NIV"
+      }
+    },
+    "JOB": {
+      "thadbsi_name": "Job",
+      "english_name": "Job",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 42,
+        "NIV": 42
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/JOB.INTRO1.THADBSI",
+        "NIV": "/bible/111/JOB.INTRO1.NIV"
+      }
+    },
+    "PSA": {
+      "thadbsi_name": "Labu",
+      "english_name": "Psalms",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 150,
+        "NIV": 150
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/PSA.INTRO1.THADBSI",
+        "NIV": "/bible/111/PSA.INTRO1.NIV"
+      }
+    },
+    "PRO": {
+      "thadbsi_name": "Thuchihbu",
+      "english_name": "Proverbs",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 31,
+        "NIV": 31
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/PRO.INTRO1.THADBSI",
+        "NIV": "/bible/111/PRO.INTRO1.NIV"
+      }
+    },
+    "ECC": {
+      "thadbsi_name": "Thuhilpa",
+      "english_name": "Ecclesiastes",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 12,
+        "NIV": 12
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/ECC.INTRO1.THADBSI",
+        "NIV": "/bible/111/ECC.INTRO1.NIV"
+      }
+    },
+    "SNG": {
+      "thadbsi_name": "Solomon Labu",
+      "english_name": "Song of Songs",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 8,
+        "NIV": 8
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/SNG.INTRO1.THADBSI",
+        "NIV": "/bible/111/SNG.INTRO1.NIV"
+      }
+    },
+    "ISA": {
+      "thadbsi_name": "Isaiah",
+      "english_name": "Isaiah",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 66,
+        "NIV": 66
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/ISA.INTRO1.THADBSI",
+        "NIV": "/bible/111/ISA.INTRO1.NIV"
+      }
+    },
+    "JER": {
+      "thadbsi_name": "Jeremiah",
+      "english_name": "Jeremiah",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 52,
+        "NIV": 52
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/JER.INTRO1.THADBSI",
+        "NIV": "/bible/111/JER.INTRO1.NIV"
+      }
+    },
+    "LAM": {
+      "thadbsi_name": "Kala",
+      "english_name": "Lamentations",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 5,
+        "NIV": 5
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/LAM.INTRO1.THADBSI",
+        "NIV": "/bible/111/LAM.INTRO1.NIV"
+      }
+    },
+    "EZK": {
+      "thadbsi_name": "Ezekiel",
+      "english_name": "Ezekiel",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 48,
+        "NIV": 48
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/EZK.INTRO1.THADBSI",
+        "NIV": "/bible/111/EZK.INTRO1.NIV"
+      }
+    },
+    "DAN": {
+      "thadbsi_name": "Daniel",
+      "english_name": "Daniel",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 12,
+        "NIV": 12
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/DAN.INTRO1.THADBSI",
+        "NIV": "/bible/111/DAN.INTRO1.NIV"
+      }
+    },
+    "HOS": {
+      "thadbsi_name": "Hosea",
+      "english_name": "Hosea",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 14,
+        "NIV": 14
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/HOS.INTRO1.THADBSI",
+        "NIV": "/bible/111/HOS.INTRO1.NIV"
+      }
+    },
+    "JOL": {
+      "thadbsi_name": "Joel",
+      "english_name": "Joel",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 3,
+        "NIV": 3
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/JOL.INTRO1.THADBSI",
+        "NIV": "/bible/111/JOL.INTRO1.NIV"
+      }
+    },
+    "AMO": {
+      "thadbsi_name": "Amos",
+      "english_name": "Amos",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 9,
+        "NIV": 9
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/AMO.INTRO1.THADBSI",
+        "NIV": "/bible/111/AMO.INTRO1.NIV"
+      }
+    },
+    "OBA": {
+      "thadbsi_name": "Obadiah",
+      "english_name": "Obadiah",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 1,
+        "NIV": 1
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/OBA.INTRO1.THADBSI",
+        "NIV": "/bible/111/OBA.INTRO1.NIV"
+      }
+    },
+    "JON": {
+      "thadbsi_name": "Jonah",
+      "english_name": "Jonah",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 4,
+        "NIV": 4
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/JON.INTRO1.THADBSI",
+        "NIV": "/bible/111/JON.INTRO1.NIV"
+      }
+    },
+    "MIC": {
+      "thadbsi_name": "Micah",
+      "english_name": "Micah",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 7,
+        "NIV": 7
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/MIC.INTRO1.THADBSI",
+        "NIV": "/bible/111/MIC.INTRO1.NIV"
+      }
+    },
+    "NAM": {
+      "thadbsi_name": "Nahum",
+      "english_name": "Nahum",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 3,
+        "NIV": 3
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/NAM.INTRO1.THADBSI",
+        "NIV": "/bible/111/NAM.INTRO1.NIV"
+      }
+    },
+    "HAB": {
+      "thadbsi_name": "Habakkuk",
+      "english_name": "Habakkuk",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 3,
+        "NIV": 3
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/HAB.INTRO1.THADBSI",
+        "NIV": "/bible/111/HAB.INTRO1.NIV"
+      }
+    },
+    "ZEP": {
+      "thadbsi_name": "Zephaniah",
+      "english_name": "Zephaniah",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 3,
+        "NIV": 3
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/ZEP.INTRO1.THADBSI",
+        "NIV": "/bible/111/ZEP.INTRO1.NIV"
+      }
+    },
+    "HAG": {
+      "thadbsi_name": "Haggai",
+      "english_name": "Haggai",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 2,
+        "NIV": 2
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/HAG.INTRO1.THADBSI",
+        "NIV": "/bible/111/HAG.INTRO1.NIV"
+      }
+    },
+    "ZEC": {
+      "thadbsi_name": "Zechariah",
+      "english_name": "Zechariah",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 14,
+        "NIV": 14
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/ZEC.INTRO1.THADBSI",
+        "NIV": "/bible/111/ZEC.INTRO1.NIV"
+      }
+    },
+    "MAL": {
+      "thadbsi_name": "Malachi",
+      "english_name": "Malachi",
+      "testament": "Old Testament",
+      "chapters": {
+        "THADBSI": 4,
+        "NIV": 4
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/MAL.INTRO1.THADBSI",
+        "NIV": "/bible/111/MAL.INTRO1.NIV"
+      }
+    },
+    "MAT": {
+      "thadbsi_name": "Mathew",
+      "english_name": "Matthew",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 28,
+        "NIV": 28
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/MAT.INTRO1.THADBSI",
+        "NIV": "/bible/111/MAT.INTRO1.NIV"
+      }
+    },
+    "MRK": {
+      "thadbsi_name": "Mark",
+      "english_name": "Mark",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 16,
+        "NIV": 16
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/MRK.INTRO1.THADBSI",
+        "NIV": "/bible/111/MRK.INTRO1.NIV"
+      }
+    },
+    "LUK": {
+      "thadbsi_name": "Luke",
+      "english_name": "Luke",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 24,
+        "NIV": 24
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/LUK.INTRO1.THADBSI",
+        "NIV": "/bible/111/LUK.INTRO1.NIV"
+      }
+    },
+    "JHN": {
+      "thadbsi_name": "John",
+      "english_name": "John",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 21,
+        "NIV": 21
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/JHN.INTRO1.THADBSI",
+        "NIV": "/bible/111/JHN.INTRO1.NIV"
+      }
+    },
+    "ACT": {
+      "thadbsi_name": "Solchah",
+      "english_name": "Acts",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 28,
+        "NIV": 28
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/ACT.INTRO1.THADBSI",
+        "NIV": "/bible/111/ACT.INTRO1.NIV"
+      }
+    },
+    "ROM": {
+      "thadbsi_name": "Rome",
+      "english_name": "Romans",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 16,
+        "NIV": 16
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/ROM.INTRO1.THADBSI",
+        "NIV": "/bible/111/ROM.INTRO1.NIV"
+      }
+    },
+    "1CO": {
+      "thadbsi_name": "1 Corinth",
+      "english_name": "1 Corinthians",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 16,
+        "NIV": 16
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/1CO.INTRO1.THADBSI",
+        "NIV": "/bible/111/1CO.INTRO1.NIV"
+      }
+    },
+    "2CO": {
+      "thadbsi_name": "2 Corinth",
+      "english_name": "2 Corinthians",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 13,
+        "NIV": 13
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/2CO.INTRO1.THADBSI",
+        "NIV": "/bible/111/2CO.INTRO1.NIV"
+      }
+    },
+    "GAL": {
+      "thadbsi_name": "Galatia",
+      "english_name": "Galatians",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 6,
+        "NIV": 6
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/GAL.INTRO1.THADBSI",
+        "NIV": "/bible/111/GAL.INTRO1.NIV"
+      }
+    },
+    "EPH": {
+      "thadbsi_name": "Ephesia",
+      "english_name": "Ephesians",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 6,
+        "NIV": 6
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/EPH.INTRO1.THADBSI",
+        "NIV": "/bible/111/EPH.INTRO1.NIV"
+      }
+    },
+    "PHP": {
+      "thadbsi_name": "PHILIPPIANS",
+      "english_name": "Philippians",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 4,
+        "NIV": 4
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/PHP.INTRO1.THADBSI",
+        "NIV": "/bible/111/PHP.INTRO1.NIV"
+      }
+    },
+    "COL": {
+      "thadbsi_name": "Colossia",
+      "english_name": "Colossians",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 4,
+        "NIV": 4
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/COL.INTRO1.THADBSI",
+        "NIV": "/bible/111/COL.INTRO1.NIV"
+      }
+    },
+    "1TH": {
+      "thadbsi_name": "1 Thessalonica",
+      "english_name": "1 Thessalonians",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 5,
+        "NIV": 5
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/1TH.INTRO1.THADBSI",
+        "NIV": "/bible/111/1TH.INTRO1.NIV"
+      }
+    },
+    "2TH": {
+      "thadbsi_name": "2 Thessalonica",
+      "english_name": "2 Thessalonians",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 3,
+        "NIV": 3
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/2TH.INTRO1.THADBSI",
+        "NIV": "/bible/111/2TH.INTRO1.NIV"
+      }
+    },
+    "1TI": {
+      "thadbsi_name": "1 Timothy",
+      "english_name": "1 Timothy",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 6,
+        "NIV": 6
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/1TI.INTRO1.THADBSI",
+        "NIV": "/bible/111/1TI.INTRO1.NIV"
+      }
+    },
+    "2TI": {
+      "thadbsi_name": "2 Timothy",
+      "english_name": "2 Timothy",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 4,
+        "NIV": 4
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/2TI.INTRO1.THADBSI",
+        "NIV": "/bible/111/2TI.INTRO1.NIV"
+      }
+    },
+    "TIT": {
+      "thadbsi_name": "Titus",
+      "english_name": "Titus",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 3,
+        "NIV": 3
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/TIT.INTRO1.THADBSI",
+        "NIV": "/bible/111/TIT.INTRO1.NIV"
+      }
+    },
+    "PHM": {
+      "thadbsi_name": "Philemon",
+      "english_name": "Philemon",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 1,
+        "NIV": 1
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/PHM.INTRO1.THADBSI",
+        "NIV": "/bible/111/PHM.INTRO1.NIV"
+      }
+    },
+    "HEB": {
+      "thadbsi_name": "Hebrai",
+      "english_name": "Hebrews",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 13,
+        "NIV": 13
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/HEB.INTRO1.THADBSI",
+        "NIV": "/bible/111/HEB.INTRO1.NIV"
+      }
+    },
+    "JAS": {
+      "thadbsi_name": "Jacob",
+      "english_name": "James",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 5,
+        "NIV": 5
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/JAS.INTRO1.THADBSI",
+        "NIV": "/bible/111/JAS.INTRO1.NIV"
+      }
+    },
+    "1PE": {
+      "thadbsi_name": "1 Peter",
+      "english_name": "1 Peter",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 5,
+        "NIV": 5
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/1PE.INTRO1.THADBSI",
+        "NIV": "/bible/111/1PE.INTRO1.NIV"
+      }
+    },
+    "2PE": {
+      "thadbsi_name": "2 Peter",
+      "english_name": "2 Peter",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 3,
+        "NIV": 3
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/2PE.INTRO1.THADBSI",
+        "NIV": "/bible/111/2PE.INTRO1.NIV"
+      }
+    },
+    "1JN": {
+      "thadbsi_name": "1 John",
+      "english_name": "1 John",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 5,
+        "NIV": 5
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/1JN.INTRO1.THADBSI",
+        "NIV": "/bible/111/1JN.INTRO1.NIV"
+      }
+    },
+    "2JN": {
+      "thadbsi_name": "2 John",
+      "english_name": "2 John",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 1,
+        "NIV": 1
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/2JN.INTRO1.THADBSI",
+        "NIV": "/bible/111/2JN.INTRO1.NIV"
+      }
+    },
+    "3JN": {
+      "thadbsi_name": "3 John",
+      "english_name": "3 John",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 1,
+        "NIV": 1
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/3JN.INTRO1.THADBSI",
+        "NIV": "/bible/111/3JN.INTRO1.NIV"
+      }
+    },
+    "JUD": {
+      "thadbsi_name": "Jude",
+      "english_name": "Jude",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 1,
+        "NIV": 1
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/JUD.INTRO1.THADBSI",
+        "NIV": "/bible/111/JUD.INTRO1.NIV"
+      }
+    },
+    "REV": {
+      "thadbsi_name": "Thuphon",
+      "english_name": "Revelation",
+      "testament": "New Testament",
+      "chapters": {
+        "THADBSI": 22,
+        "NIV": 22
+      },
+      "intro_urls": {
+        "THADBSI": "/bible/1879/REV.INTRO1.THADBSI",
+        "NIV": "/bible/111/REV.INTRO1.NIV"
+      }
+    }
+  }
+}

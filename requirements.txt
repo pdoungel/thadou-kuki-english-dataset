@@ -1,0 +1,5 @@
+# Runtime
+playwright>=1.40
+
+# Tests
+pytest>=7.0

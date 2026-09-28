@@ -1,0 +1,558 @@
+{
+  "version": "THADBSI",
+  "version_id": 1879,
+  "version_code": "THADBSI",
+  "version_name": "Pathen Thutheng BU (BSI)",
+  "version_url": "https://www.bible.com/versions/1879-thadbsi-pathen-thutheng-bu-bsi",
+  "publisher": "Bible Society of India",
+  "discovered_at": "2026-09-27T10:50:53+00:00",
+  "book_count": 66,
+  "validation": {
+    "status": "verified",
+    "checks": {
+      "books_non_empty": true,
+      "book_codes_unique": true,
+      "version_codes_uniform": true,
+      "expected_book_count": true,
+      "all_chapters_positive": true,
+      "display_names_present": true,
+      "canonical_books_present": true
+    },
+    "chapter_count_mismatches": [],
+    "missing_canonical_books": [],
+    "unexpected_books": [],
+    "duplicate_chapter_urls": [
+      "/bible/1879/GEN.1.THADBSI",
+      "/bible/1879/GEN.1.THADBSI",
+      "/bible/1879/EXO.1.THADBSI",
+      "/bible/1879/LEV.1.THADBSI",
+      "/bible/1879/NUM.1.THADBSI",
+      "/bible/1879/DEU.1.THADBSI",
+      "/bible/1879/JOS.1.THADBSI",
+      "/bible/1879/JDG.1.THADBSI",
+      "/bible/1879/RUT.1.THADBSI",
+      "/bible/1879/1SA.1.THADBSI",
+      "/bible/1879/2SA.1.THADBSI",
+      "/bible/1879/1KI.1.THADBSI",
+      "/bible/1879/2KI.1.THADBSI",
+      "/bible/1879/1CH.1.THADBSI",
+      "/bible/1879/2CH.1.THADBSI",
+      "/bible/1879/EZR.1.THADBSI",
+      "/bible/1879/NEH.1.THADBSI",
+      "/bible/1879/EST.1.THADBSI",
+      "/bible/1879/JOB.1.THADBSI",
+      "/bible/1879/PSA.1.THADBSI",
+      "/bible/1879/PRO.1.THADBSI",
+      "/bible/1879/ECC.1.THADBSI",
+      "/bible/1879/SNG.1.THADBSI",
+      "/bible/1879/ISA.1.THADBSI",
+      "/bible/1879/JER.1.THADBSI",
+      "/bible/1879/LAM.1.THADBSI",
+      "/bible/1879/EZK.1.THADBSI",
+      "/bible/1879/DAN.1.THADBSI",
+      "/bible/1879/HOS.1.THADBSI",
+      "/bible/1879/JOL.1.THADBSI",
+      "/bible/1879/AMO.1.THADBSI",
+      "/bible/1879/OBA.1.THADBSI",
+      "/bible/1879/JON.1.THADBSI",
+      "/bible/1879/MIC.1.THADBSI",
+      "/bible/1879/NAM.1.THADBSI",
+      "/bible/1879/HAB.1.THADBSI",
+      "/bible/1879/ZEP.1.THADBSI",
+      "/bible/1879/HAG.1.THADBSI",
+      "/bible/1879/ZEC.1.THADBSI",
+      "/bible/1879/MAL.1.THADBSI",
+      "/bible/1879/MAT.1.THADBSI",
+      "/bible/1879/MRK.1.THADBSI",
+      "/bible/1879/LUK.1.THADBSI",
+      "/bible/1879/JHN.1.THADBSI",
+      "/bible/1879/ACT.1.THADBSI",
+      "/bible/1879/ROM.1.THADBSI",
+      "/bible/1879/1CO.1.THADBSI",
+      "/bible/1879/2CO.1.THADBSI",
+      "/bible/1879/GAL.1.THADBSI",
+      "/bible/1879/EPH.1.THADBSI",
+      "/bible/1879/PHP.1.THADBSI",
+      "/bible/1879/COL.1.THADBSI",
+      "/bible/1879/1TH.1.THADBSI",
+      "/bible/1879/2TH.1.THADBSI",
+      "/bible/1879/1TI.1.THADBSI",
+      "/bible/1879/2TI.1.THADBSI",
+      "/bible/1879/TIT.1.THADBSI",
+      "/bible/1879/PHM.1.THADBSI",
+      "/bible/1879/HEB.1.THADBSI",
+      "/bible/1879/JAS.1.THADBSI",
+      "/bible/1879/1PE.1.THADBSI",
+      "/bible/1879/2PE.1.THADBSI",
+      "/bible/1879/1JN.1.THADBSI",
+      "/bible/1879/2JN.1.THADBSI",
+      "/bible/1879/3JN.1.THADBSI",
+      "/bible/1879/JUD.1.THADBSI",
+      "/bible/1879/REV.1.THADBSI"
+    ]
+  },
+  "books": [
+    {
+      "code": "GEN",
+      "name": "Semtilbu",
+      "testament": "Old Testament",
+      "chapter_count": 50,
+      "intro_url": "/bible/1879/GEN.INTRO1.THADBSI"
+    },
+    {
+      "code": "EXO",
+      "name": "Potdohbu",
+      "testament": "Old Testament",
+      "chapter_count": 40,
+      "intro_url": "/bible/1879/EXO.INTRO1.THADBSI"
+    },
+    {
+      "code": "LEV",
+      "name": "Thempudan",
+      "testament": "Old Testament",
+      "chapter_count": 27,
+      "intro_url": "/bible/1879/LEV.INTRO1.THADBSI"
+    },
+    {
+      "code": "NUM",
+      "name": "Minbu",
+      "testament": "Old Testament",
+      "chapter_count": 36,
+      "intro_url": "/bible/1879/NUM.INTRO1.THADBSI"
+    },
+    {
+      "code": "DEU",
+      "name": "Danbu",
+      "testament": "Old Testament",
+      "chapter_count": 34,
+      "intro_url": "/bible/1879/DEU.INTRO1.THADBSI"
+    },
+    {
+      "code": "JOS",
+      "name": "Joshua",
+      "testament": "Old Testament",
+      "chapter_count": 24,
+      "intro_url": "/bible/1879/JOS.INTRO1.THADBSI"
+    },
+    {
+      "code": "JDG",
+      "name": "Thutanho",
+      "testament": "Old Testament",
+      "chapter_count": 21,
+      "intro_url": "/bible/1879/JDG.INTRO1.THADBSI"
+    },
+    {
+      "code": "RUT",
+      "name": "Ruth",
+      "testament": "Old Testament",
+      "chapter_count": 4,
+      "intro_url": "/bible/1879/RUT.INTRO1.THADBSI"
+    },
+    {
+      "code": "1SA",
+      "name": "1 Samuel",
+      "testament": "Old Testament",
+      "chapter_count": 31,
+      "intro_url": "/bible/1879/1SA.INTRO1.THADBSI"
+    },
+    {
+      "code": "2SA",
+      "name": "2 Samuel",
+      "testament": "Old Testament",
+      "chapter_count": 24,
+      "intro_url": "/bible/1879/2SA.INTRO1.THADBSI"
+    },
+    {
+      "code": "1KI",
+      "name": "1 Lengte",
+      "testament": "Old Testament",
+      "chapter_count": 22,
+      "intro_url": "/bible/1879/1KI.INTRO1.THADBSI"
+    },
+    {
+      "code": "2KI",
+      "name": "2 Lengte",
+      "testament": "Old Testament",
+      "chapter_count": 25,
+      "intro_url": "/bible/1879/2KI.INTRO1.THADBSI"
+    },
+    {
+      "code": "1CH",
+      "name": "1 Thusimbu",
+      "testament": "Old Testament",
+      "chapter_count": 29,
+      "intro_url": "/bible/1879/1CH.INTRO1.THADBSI"
+    },
+    {
+      "code": "2CH",
+      "name": "2 Thusimbu",
+      "testament": "Old Testament",
+      "chapter_count": 36,
+      "intro_url": "/bible/1879/2CH.INTRO1.THADBSI"
+    },
+    {
+      "code": "EZR",
+      "name": "Ezra",
+      "testament": "Old Testament",
+      "chapter_count": 10,
+      "intro_url": "/bible/1879/EZR.INTRO1.THADBSI"
+    },
+    {
+      "code": "NEH",
+      "name": "NEHEMIAH",
+      "testament": "Old Testament",
+      "chapter_count": 13,
+      "intro_url": "/bible/1879/NEH.INTRO1.THADBSI"
+    },
+    {
+      "code": "EST",
+      "name": "Esther",
+      "testament": "Old Testament",
+      "chapter_count": 10,
+      "intro_url": "/bible/1879/EST.INTRO1.THADBSI"
+    },
+    {
+      "code": "JOB",
+      "name": "Job",
+      "testament": "Old Testament",
+      "chapter_count": 42,
+      "intro_url": "/bible/1879/JOB.INTRO1.THADBSI"
+    },
+    {
+      "code": "PSA",
+      "name": "Labu",
+      "testament": "Old Testament",
+      "chapter_count": 150,
+      "intro_url": "/bible/1879/PSA.INTRO1.THADBSI"
+    },
+    {
+      "code": "PRO",
+      "name": "Thuchihbu",
+      "testament": "Old Testament",
+      "chapter_count": 31,
+      "intro_url": "/bible/1879/PRO.INTRO1.THADBSI"
+    },
+    {
+      "code": "ECC",
+      "name": "Thuhilpa",
+      "testament": "Old Testament",
+      "chapter_count": 12,
+      "intro_url": "/bible/1879/ECC.INTRO1.THADBSI"
+    },
+    {
+      "code": "SNG",
+      "name": "Solomon Labu",
+      "testament": "Old Testament",
+      "chapter_count": 8,
+      "intro_url": "/bible/1879/SNG.INTRO1.THADBSI"
+    },
+    {
+      "code": "ISA",
+      "name": "Isaiah",
+      "testament": "Old Testament",
+      "chapter_count": 66,
+      "intro_url": "/bible/1879/ISA.INTRO1.THADBSI"
+    },
+    {
+      "code": "JER",
+      "name": "Jeremiah",
+      "testament": "Old Testament",
+      "chapter_count": 52,
+      "intro_url": "/bible/1879/JER.INTRO1.THADBSI"
+    },
+    {
+      "code": "LAM",
+      "name": "Kala",
+      "testament": "Old Testament",
+      "chapter_count": 5,
+      "intro_url": "/bible/1879/LAM.INTRO1.THADBSI"
+    },
+    {
+      "code": "EZK",
+      "name": "Ezekiel",
+      "testament": "Old Testament",
+      "chapter_count": 48,
+      "intro_url": "/bible/1879/EZK.INTRO1.THADBSI"
+    },
+    {
+      "code": "DAN",
+      "name": "Daniel",
+      "testament": "Old Testament",
+      "chapter_count": 12,
+      "intro_url": "/bible/1879/DAN.INTRO1.THADBSI"
+    },
+    {
+      "code": "HOS",
+      "name": "Hosea",
+      "testament": "Old Testament",
+      "chapter_count": 14,
+      "intro_url": "/bible/1879/HOS.INTRO1.THADBSI"
+    },
+    {
+      "code": "JOL",
+      "name": "Joel",
+      "testament": "Old Testament",
+      "chapter_count": 3,
+      "intro_url": "/bible/1879/JOL.INTRO1.THADBSI"
+    },
+    {
+      "code": "AMO",
+      "name": "Amos",
+      "testament": "Old Testament",
+      "chapter_count": 9,
+      "intro_url": "/bible/1879/AMO.INTRO1.THADBSI"
+    },
+    {
+      "code": "OBA",
+      "name": "Obadiah",
+      "testament": "Old Testament",
+      "chapter_count": 1,
+      "intro_url": "/bible/1879/OBA.INTRO1.THADBSI"
+    },
+    {
+      "code": "JON",
+      "name": "Jonah",
+      "testament": "Old Testament",
+      "chapter_count": 4,
+      "intro_url": "/bible/1879/JON.INTRO1.THADBSI"
+    },
+    {
+      "code": "MIC",
+      "name": "Micah",
+      "testament": "Old Testament",
+      "chapter_count": 7,
+      "intro_url": "/bible/1879/MIC.INTRO1.THADBSI"
+    },
+    {
+      "code": "NAM",
+      "name": "Nahum",
+      "testament": "Old Testament",
+      "chapter_count": 3,
+      "intro_url": "/bible/1879/NAM.INTRO1.THADBSI"
+    },
+    {
+      "code": "HAB",
+      "name": "Habakkuk",
+      "testament": "Old Testament",
+      "chapter_count": 3,
+      "intro_url": "/bible/1879/HAB.INTRO1.THADBSI"
+    },
+    {
+      "code": "ZEP",
+      "name": "Zephaniah",
+      "testament": "Old Testament",
+      "chapter_count": 3,
+      "intro_url": "/bible/1879/ZEP.INTRO1.THADBSI"
+    },
+    {
+      "code": "HAG",
+      "name": "Haggai",
+      "testament": "Old Testament",
+      "chapter_count": 2,
+      "intro_url": "/bible/1879/HAG.INTRO1.THADBSI"
+    },
+    {
+      "code": "ZEC",
+      "name": "Zechariah",
+      "testament": "Old Testament",
+      "chapter_count": 14,
+      "intro_url": "/bible/1879/ZEC.INTRO1.THADBSI"
+    },
+    {
+      "code": "MAL",
+      "name": "Malachi",
+      "testament": "Old Testament",
+      "chapter_count": 4,
+      "intro_url": "/bible/1879/MAL.INTRO1.THADBSI"
+    },
+    {
+      "code": "MAT",
+      "name": "Mathew",
+      "testament": "New Testament",
+      "chapter_count": 28,
+      "intro_url": "/bible/1879/MAT.INTRO1.THADBSI"
+    },
+    {
+      "code": "MRK",
+      "name": "Mark",
+      "testament": "New Testament",
+      "chapter_count": 16,
+      "intro_url": "/bible/1879/MRK.INTRO1.THADBSI"
+    },
+    {
+      "code": "LUK",
+      "name": "Luke",
+      "testament": "New Testament",
+      "chapter_count": 24,
+      "intro_url": "/bible/1879/LUK.INTRO1.THADBSI"
+    },
+    {
+      "code": "JHN",
+      "name": "John",
+      "testament": "New Testament",
+      "chapter_count": 21,
+      "intro_url": "/bible/1879/JHN.INTRO1.THADBSI"
+    },
+    {
+      "code": "ACT",
+      "name": "Solchah",
+      "testament": "New Testament",
+      "chapter_count": 28,
+      "intro_url": "/bible/1879/ACT.INTRO1.THADBSI"
+    },
+    {
+      "code": "ROM",
+      "name": "Rome",
+      "testament": "New Testament",
+      "chapter_count": 16,
+      "intro_url": "/bible/1879/ROM.INTRO1.THADBSI"
+    },
+    {
+      "code": "1CO",
+      "name": "1 Corinth",
+      "testament": "New Testament",
+      "chapter_count": 16,
+      "intro_url": "/bible/1879/1CO.INTRO1.THADBSI"
+    },
+    {
+      "code": "2CO",
+      "name": "2 Corinth",
+      "testament": "New Testament",
+      "chapter_count": 13,
+      "intro_url": "/bible/1879/2CO.INTRO1.THADBSI"
+    },
+    {
+      "code": "GAL",
+      "name": "Galatia",
+      "testament": "New Testament",
+      "chapter_count": 6,
+      "intro_url": "/bible/1879/GAL.INTRO1.THADBSI"
+    },
+    {
+      "code": "EPH",
+      "name": "Ephesia",
+      "testament": "New Testament",
+      "chapter_count": 6,
+      "intro_url": "/bible/1879/EPH.INTRO1.THADBSI"
+    },
+    {
+      "code": "PHP",
+      "name": "PHILIPPIANS",
+      "testament": "New Testament",
+      "chapter_count": 4,
+      "intro_url": "/bible/1879/PHP.INTRO1.THADBSI"
+    },
+    {
+      "code": "COL",
+      "name": "Colossia",
+      "testament": "New Testament",
+      "chapter_count": 4,
+      "intro_url": "/bible/1879/COL.INTRO1.THADBSI"
+    },
+    {
+      "code": "1TH",
+      "name": "1 Thessalonica",
+      "testament": "New Testament",
+      "chapter_count": 5,
+      "intro_url": "/bible/1879/1TH.INTRO1.THADBSI"
+    },
+    {
+      "code": "2TH",
+      "name": "2 Thessalonica",
+      "testament": "New Testament",
+      "chapter_count": 3,
+      "intro_url": "/bible/1879/2TH.INTRO1.THADBSI"
+    },
+    {
+      "code": "1TI",
+      "name": "1 Timothy",
+      "testament": "New Testament",
+      "chapter_count": 6,
+      "intro_url": "/bible/1879/1TI.INTRO1.THADBSI"
+    },
+    {
+      "code": "2TI",
+      "name": "2 Timothy",
+      "testament": "New Testament",
+      "chapter_count": 4,
+      "intro_url": "/bible/1879/2TI.INTRO1.THADBSI"
+    },
+    {
+      "code": "TIT",
+      "name": "Titus",
+      "testament": "New Testament",
+      "chapter_count": 3,
+      "intro_url": "/bible/1879/TIT.INTRO1.THADBSI"
+    },
+    {
+      "code": "PHM",
+      "name": "Philemon",
+      "testament": "New Testament",
+      "chapter_count": 1,
+      "intro_url": "/bible/1879/PHM.INTRO1.THADBSI"
+    },
+    {
+      "code": "HEB",
+      "name": "Hebrai",
+      "testament": "New Testament",
+      "chapter_count": 13,
+      "intro_url": "/bible/1879/HEB.INTRO1.THADBSI"
+    },
+    {
+      "code": "JAS",
+      "name": "Jacob",
+      "testament": "New Testament",
+      "chapter_count": 5,
+      "intro_url": "/bible/1879/JAS.INTRO1.THADBSI"
+    },
+    {
+      "code": "1PE",
+      "name": "1 Peter",
+      "testament": "New Testament",
+      "chapter_count": 5,
+      "intro_url": "/bible/1879/1PE.INTRO1.THADBSI"
+    },
+    {
+      "code": "2PE",
+      "name": "2 Peter",
+      "testament": "New Testament",
+      "chapter_count": 3,
+      "intro_url": "/bible/1879/2PE.INTRO1.THADBSI"
+    },
+    {
+      "code": "1JN",
+      "name": "1 John",
+      "testament": "New Testament",
+      "chapter_count": 5,
+      "intro_url": "/bible/1879/1JN.INTRO1.THADBSI"
+    },
+    {
+      "code": "2JN",
+      "name": "2 John",
+      "testament": "New Testament",
+      "chapter_count": 1,
+      "intro_url": "/bible/1879/2JN.INTRO1.THADBSI"
+    },
+    {
+      "code": "3JN",
+      "name": "3 John",
+      "testament": "New Testament",
+      "chapter_count": 1,
+      "intro_url": "/bible/1879/3JN.INTRO1.THADBSI"
+    },
+    {
+      "code": "JUD",
+      "name": "Jude",
+      "testament": "New Testament",
+      "chapter_count": 1,
+      "intro_url": "/bible/1879/JUD.INTRO1.THADBSI"
+    },
+    {
+      "code": "REV",
+      "name": "Thuphon",
+      "testament": "New Testament",
+      "chapter_count": 22,
+      "intro_url": "/bible/1879/REV.INTRO1.THADBSI"
+    }
+  ]
+}

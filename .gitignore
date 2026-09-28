@@ -1,1 +1,122 @@
-__pycache__/\n*.pyc\n.venv/\napp/data/*.db\napp/data/*.db-*\n
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.env
+*.env
+.env.*
+!.env.example
+
+# ---------------------------------------------------------------------------
+# Secrets / credentials / auth material — never commit
+# ---------------------------------------------------------------------------
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+service-account*.json
+.netrc
+.netrc.*
+*.cookies
+cookies.txt
+session*.json
+auth*.json
+tokens.json
+
+# ---------------------------------------------------------------------------
+# Browser / Playwright artifacts
+# ---------------------------------------------------------------------------
+node_modules/
+playwright-report/
+test-results/
+.playwright/
+playwright/.cache/
+.playwright-browsers/
+browser_profiles/
+browser-profile/
+profile_*/
+*.state.json
+storage_state.json
+Default/
+cookies.sqlite
+logins.json
+
+# ---------------------------------------------------------------------------
+# Language AI Studio local database (app/ — see app/README.md)
+# ---------------------------------------------------------------------------
+app/data/*.db
+app/data/*.db-*
+
+# ---------------------------------------------------------------------------
+# OS / editor noise (including macOS AppleDouble sidecars)
+# ---------------------------------------------------------------------------
+.DS_Store
+._*
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# ---------------------------------------------------------------------------
+# Caches, scratch, temporary
+# ---------------------------------------------------------------------------
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+tmp/
+temp/
+temporary/
+scratch/
+renders/
+output/
+
+# ---------------------------------------------------------------------------
+# Media (nothing in this repository is media)
+# ---------------------------------------------------------------------------
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.flac
+*.ogg
+
+# ---------------------------------------------------------------------------
+# Restricted source text — LOCAL ONLY (see docs/DATA_ACCESS.md)
+#
+# The Bible text captured from bible.com (THADBSI © Bible Society of India,
+# NIV © Biblica) has no established redistribution permission, so the
+# verse-text artifacts are never committed here. Metadata, audit hashes,
+# manifests, reports, checksums and code ARE committed.
+#
+# Remove these entries only after written permission is recorded in
+# LICENSE_NOTES.md and metadata/sources.json.
+# ---------------------------------------------------------------------------
+data/raw/
+data/normalized/
+data/aligned/*.jsonl
+data/aligned/splits/*.jsonl
+
+# Rejected/scrapped corpus drops and local build scratch
+local_only/
+*.local.jsonl
+
+# Console captures from collection runs (logs/*.log are the record of truth)
+logs/*.out

@@ -6,19 +6,20 @@ the order shown. `null` is JSON `null`, never the string `"null"`.
 Field documentation below is transcribed from the artifacts themselves, not from
 intent. Where a field is absent from a row it is absent from the schema.
 
-Files are split into two classes:
+Files are split into three classes:
 
 | Class | In this repository? | Files |
 |---|---|---|
 | **Metadata / audit / reports** (no verse text) | yes | `data/audit/*`, `data/manifests/*`, `data/discovery/*`, `data/aligned/splits/split_manifest.json`, `reports/*`, `logs/*` |
-| **Verse text** (restricted — never committed) | no, local only | `data/aligned/*.jsonl`, `data/aligned/splits/{train,validation,test}.jsonl`, `data/normalized/*.jsonl`, `data/raw/**` |
+| **Aligned corpus** (verse text, **no licence**) | yes, since 2026-09-28 | `data/aligned/thadou_kuki_niv_parallel.jsonl`, `data/aligned/thadou_kuki_niv_ml.jsonl` |
+| **Local-only build artifacts** | no | `data/aligned/splits/{train,validation,test}.jsonl`, `data/normalized/*.jsonl`, `data/raw/**` |
 
-See [`DATA_ACCESS.md`](DATA_ACCESS.md) for the redistribution rationale, expected
-local paths, sizes and SHA-256 digests.
+See [`DATA_ACCESS.md`](DATA_ACCESS.md) for the rights rationale (no permission
+established for either edition), expected local paths, sizes and SHA-256 digests.
 
 ---
 
-## 1. `data/aligned/thadou_kuki_niv_parallel.jsonl` — *(local only)*
+## 1. `data/aligned/thadou_kuki_niv_parallel.jsonl` — *committed* (no licence)
 
 The aligned parallel corpus: one row per aligned verse reference.
 
@@ -55,7 +56,7 @@ The aligned parallel corpus: one row per aligned verse reference.
   filter cross-version leakage if they choose.
 * Rows are unique by `id`. 31,087 rows.
 
-## 2. `data/aligned/thadou_kuki_niv_ml.jsonl` — *(local only)*
+## 2. `data/aligned/thadou_kuki_niv_ml.jsonl` — *committed* (no licence)
 
 Training view of the same corpus: only the fields an MT/SFT loader needs.
 
@@ -166,8 +167,9 @@ only "complete" when `ok` and `complete` are both `true`.
 > **Excerpt notice:** `spot_checks` embeds 7 verse pairs (both languages) as live
 > verification evidence. `reports/quality_report.json` carries the same 7-entry array and
 > `reports/quality_report.md` renders the same 7 as its `## Manual spot checks` table. These
-> excerpts are retained deliberately as part of the audit record; the corpora themselves are
-> withheld. See [`DATA_ACCESS.md`](DATA_ACCESS.md) §4.
+> excerpts are retained deliberately as part of the audit record. Since 2026-09-28 the full
+> corpus is published too, so this note identifies where those strings came from rather than
+> marking an exposure. See [`DATA_ACCESS.md`](DATA_ACCESS.md) §4.
 
 ## 8. `data/manifests/progress.json` — *committed* (877,075 bytes)
 

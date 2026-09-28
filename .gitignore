@@ -99,19 +99,21 @@ output/
 *.ogg
 
 # ---------------------------------------------------------------------------
-# Restricted source text — LOCAL ONLY (see docs/DATA_ACCESS.md)
+# Source captures still held locally (see docs/DATA_ACCESS.md)
 #
-# The Bible text captured from bible.com (THADBSI © Bible Society of India,
-# NIV © Biblica) has no established redistribution permission, so the
-# verse-text artifacts are never committed here. Metadata, audit hashes,
-# manifests, reports, checksums and code ARE committed.
+# The raw bible.com chapter captures and the per-version normalized verse
+# records remain LOCAL ONLY. The two aligned corpus files
+# (data/aligned/thadou_kuki_niv_{parallel,ml}.jsonl) are deliberately
+# PUBLISHED — see LICENSE_NOTES.md and docs/DATA_ACCESS.md: no redistribution
+# permission is established for THADBSI (Bible Society of India) or NIV
+# (Biblica), and the text was published at the repository owner's explicit
+# direction. No license is claimed for it.
 #
-# Remove these entries only after written permission is recorded in
-# LICENSE_NOTES.md and metadata/sources.json.
+# The three split files are also still local-only: they are reproducible from
+# the published corpus plus data/aligned/splits/split_manifest.json.
 # ---------------------------------------------------------------------------
 data/raw/
 data/normalized/
-data/aligned/*.jsonl
 data/aligned/splits/*.jsonl
 
 # Rejected/scrapped corpus drops and local build scratch

@@ -70,7 +70,8 @@
         "parallel"
       ],
       "rights_status": "PERMISSION_REQUIRED",
-      "repository_policy": "metadata-only"
+      "repository_policy": "included-rights-unconfirmed",
+      "notes": "Aligned corpus text published at repository owner's explicit direction on 2026-09-28; no permission established and no license granted. See LICENSE_NOTES.md -> Publication status."
     },
     {
       "source_id": "biblica-niv",
@@ -82,7 +83,8 @@
         "reference"
       ],
       "rights_status": "PERMISSION_REQUIRED",
-      "repository_policy": "metadata-only"
+      "repository_policy": "included-rights-unconfirmed",
+      "notes": "Aligned corpus text published at repository owner's explicit direction on 2026-09-28; no permission established and no license granted. See LICENSE_NOTES.md -> Publication status."
     },
     {
       "source_id": "ldcil-mother-tongue-parallel-corpus-vol1",

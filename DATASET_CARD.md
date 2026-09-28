@@ -21,25 +21,33 @@ alignment, verification and reporting are implemented in `bible_scraper/` and do
 `docs/PIPELINE.md`; fields are described in `docs/DATA_SCHEMA.md`.
 
 Under the data-governance rule above, this source is classified
-`rights_status: PERMISSION_REQUIRED`, `repository_policy: metadata-only` in
-`metadata/sources.json`. Therefore:
+`rights_status: PERMISSION_REQUIRED` in `metadata/sources.json`
+(`repository_policy: included-rights-unconfirmed`).
 
-- **Published:** references and canonical structure, alignment statuses and reasons, sha256
-  content hashes, the 31,104-record audit trail, verification results, quality reports,
-  checksums, manifests, split assignment (book codes), code and tests.
-- **Withheld:** THADBSI verse text, NIV verse text, raw chapter captures, normalized records,
-  the aligned/ML JSONL files and the three split files. These are local-only release
-  artifacts, blocked by `.gitignore`.
-- The alignment itself is publishable because it contains no text: every audit record carries
-  hashes and a reason instead of verse content.
+**Exception recorded 2026-09-28:** the two aligned corpus files
+(`data/aligned/thadou_kuki_niv_{parallel,ml}.jsonl` — 31,087 verse pairs carrying both
+texts) are published in this repository at the owner's explicit direction, after the rights
+position was flagged. No permission from Biblica or the Bible Society of India has been
+established, and no license is granted or implied by their presence. The governance rule
+above still applies to everything else:
+
+- **Published:** the two aligned JSONL files (text, **no licence**); references and canonical
+  structure; alignment statuses and reasons; sha256 content hashes; the 31,104-record audit
+  trail; verification results; quality reports; checksums; manifests; split assignment
+  (book codes); code and tests.
+- **Still local-only** (blocked by `.gitignore`): raw chapter captures, per-version
+  normalized records and the three split files — none add information the published corpus
+  lacks, and the splits are reproducible from `split_manifest.json`.
+- Every audit record still carries hashes and a reason instead of verse content, so the
+  audit trail itself remains text-free.
 
 Three artifacts retain the same 7-verse spot-check excerpt as verification evidence —
 `data/audit/verification.json`, `reports/quality_report.json` and the `## Manual spot checks`
 table in `reports/quality_report.md`. This is documented explicitly in `docs/DATA_ACCESS.md` §4.
 
-The corpus remains usable for research on a local copy, and can be rebuilt from the public
-pages with `python -m bible_scraper all` subject to the same rights position as any other
-restricted source.
+The corpus can be rebuilt from the public pages with `python -m bible_scraper all`, subject
+to the same rights position as any other restricted source. See `docs/DATA_ACCESS.md` §1 and
+`LICENSE_NOTES.md` → *Publication status*.
 
 ## Expansion priorities
 

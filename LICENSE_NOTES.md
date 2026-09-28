@@ -48,6 +48,30 @@ republish the Bible text captured by this project.
    - <https://www.bible.com/terms>,
    - the publishers' stated policies for NIV (Biblica) and THADBSI (BSI),
    - and any license that the THADBSI translation itself may carry.
+   **An owner-directed exception was taken for the two aligned corpus files —
+   see _Publication status_ below. The review listed here has *not* been
+   completed for them.**
+
+## Publication status (recorded 2026-09-28)
+
+Two files in this repository contain the full text of both source editions:
+
+- `data/aligned/thadou_kuki_niv_parallel.jsonl` (31,087 verse pairs)
+- `data/aligned/thadou_kuki_niv_ml.jsonl` (31,087 id/source/target rows)
+
+They were published at the explicit direction of the repository owner, after the
+rights position in this file was reviewed and flagged. **No permission from
+Biblica or the Bible Society of India has been established, no license is
+granted or implied by their presence here, and `rights_status` for both sources
+in `metadata/sources.json` remains `PERMISSION_REQUIRED`.**
+
+This is a decision recorded, not a decision made correct: it does not satisfy
+the review list under point 4 or under *What you should do before
+redistributing* below. Readers and downstream users should treat the text as
+unlicensed third-party material until that review is completed.
+
+Still local-only (blocked by `.gitignore`): `data/raw/`, `data/normalized/` and
+the three `data/aligned/splits/*.jsonl` files.
 
 ## What you should do before redistributing
 

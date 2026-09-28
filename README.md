@@ -5,7 +5,7 @@ Two verse-aligned corpora live in this repository, each with one authoritative l
 | Corpus | Location | Verse text in this repo? |
 |---|---|---|
 | eBible Chongthu + English WEB/KJV + GospelGo Thadou | `out/` — rebuild: `python build_dataset.py` (reads `raw/`) | yes — open-licence / public-domain sources |
-| THADBSI ↔ NIV Bible alignment (66 books, 31,087 verse pairs) | `data/` + `reports/` + `bible_scraper/` | **no** — metadata, audit, checksums and code only ([why?](docs/DATA_ACCESS.md)) |
+| THADBSI ↔ NIV Bible alignment (66 books, 31,087 verse pairs) | `data/` + `reports/` + `bible_scraper/` | **yes** — both aligned JSONL are published, **without established permission and without any licence** ([rights status](docs/DATA_ACCESS.md)) |
 
 ## Current contents (from eBible corpus)
 | File | What |
@@ -39,9 +39,10 @@ Two Bibles (Chongthu + BSI) aligned on the same verses = extra target variety fo
 Not found: no Thadou in FLORES-200, NLLB, or any HF dataset yet → a published dataset would be the first.
 
 > **Update.** A verse-aligned **THADBSI ↔ NIV** corpus has since been produced from the
-> YouVersion pages listed above. It is published here as metadata + audit + code only — the
-> text itself stays local. See
-> [THADBSI ↔ NIV Bible alignment](#thadou-kuki-thadbsi--english-niv-bible-alignment) below.
+> YouVersion pages listed above. Both aligned JSONL files are published in this repository —
+> see [THADBSI ↔ NIV Bible alignment](#thadou-kuki-thadbsi--english-niv-bible-alignment) below.
+> The rights position on this source has **not** changed: still ask BSI (and Biblica for the
+> NIV) for permission.
 
 ## Limitation
 Bible-only data gives archaic/religious register. For conversational quality add everyday sentences
@@ -83,10 +84,15 @@ and verified by its own release gate. The authoritative statistics record is
 [`.json`](reports/quality_report.json) / [`.csv`](reports/quality_report.csv)) — the numbers
 below were copied from it, not re-derived.
 
-> **Text is not redistributed in this repository.** No license for either edition has been
-> established, so no verse text is committed. What is published is the audit trail, reports,
-> checksums, manifests and the code that rebuilds the corpus locally.
-> See [`docs/DATA_ACCESS.md`](docs/DATA_ACCESS.md) and [`LICENSE_NOTES.md`](LICENSE_NOTES.md).
+> **Rights status — read this.** Both aligned JSONL files below are published in full in
+> `data/aligned/`, **without established redistribution permission and without any license**.
+> THADBSI text is © Bible Society of India; NIV text is © Biblica, Inc.®. The text was placed
+> in this public repository at the owner's explicit direction after the rights position was
+> flagged — that records the decision, it does not license the material. Treat it as
+> unlicensed third-party text and obtain permission from Biblica and BSI before redistributing
+> it or training on it. Raw captures, per-version normalized records and the train/validation/
+> test splits remain local-only. See [`docs/DATA_ACCESS.md`](docs/DATA_ACCESS.md) and
+> [`LICENSE_NOTES.md`](LICENSE_NOTES.md).
 
 ### Dataset statistics
 
@@ -216,10 +222,10 @@ data/
   audit/                  alignment_audit.jsonl, alignment_summary.json, verification.json
   discovery/              captured version-page identity (books, canonical URLs)
   manifests/              book_mapping.json, *_books.json, *_chapters.jsonl, progress.json
+  aligned/                thadou_kuki_niv_{parallel,ml}.jsonl  ← published (no licence)
   aligned/splits/         split_manifest.json   (train/validation/test JSONL: local only)
   raw/                    raw chapter captures  (local only — .gitignore)
   normalized/             per-verse records     (local only — .gitignore)
-  aligned/                parallel + ML JSONL   (local only — .gitignore)
 docs/                     DATA_ACCESS.md, DATA_SCHEMA.md, PIPELINE.md
 reports/                  quality_report.{md,json,csv}, checksums.sha256
 logs/                     scraper.log, audit.log, errors.log
@@ -242,13 +248,21 @@ LICENSE_NOTES.md          rights notes (no licence invented)
 ### Licensing and copyright
 
 * **Project code** (`bible_scraper/`, `tests/`): MIT (declared in `pyproject.toml`).
-* **THADBSI text**: © Bible Society of India — permission not established.
-* **NIV text**: © Biblica, Inc.® — permission not established.
-* Published metadata, audit records, reports and checksums contain no verse text. Three
-  artifacts (`data/audit/verification.json`, `reports/quality_report.json`,
-  `reports/quality_report.md`) retain the same 7-verse spot-check excerpt as audit evidence —
-  see [`docs/DATA_ACCESS.md`](docs/DATA_ACCESS.md) §4.
-* The full corpora are **local-only release artifacts**; `.gitignore` blocks them.
-  Do not treat this repository as an open-licence Bible corpus — see
-  [`LICENSE_NOTES.md`](LICENSE_NOTES.md), [`metadata/sources.json`](metadata/sources.json) and
-  [`NOTICE`](NOTICE).
+* **THADBSI text**: © Bible Society of India — **permission not established**.
+* **NIV text**: © Biblica, Inc.® — **permission not established**.
+* **Both aligned JSONL files are published in full without either permission and
+  without any license.** They were placed here at the owner's explicit direction
+  after this rights position was flagged; that records the decision, it does not
+  license the material. Treat the text as unlicensed third-party content and get
+  written permission from Biblica and BSI before redistributing or training on it.
+  See [`LICENSE_NOTES.md`](LICENSE_NOTES.md) → *Publication status*, and
+  [`docs/DATA_ACCESS.md`](docs/DATA_ACCESS.md) §1.
+* Audit records, manifests, statistics, reports and checksums contain no verse
+  text. Three artifacts (`data/audit/verification.json`,
+  `reports/quality_report.json`, `reports/quality_report.md`) retain the same
+  7-verse spot-check excerpt as audit evidence — see
+  [`docs/DATA_ACCESS.md`](docs/DATA_ACCESS.md) §4.
+* Still local-only, blocked by `.gitignore`: `data/raw/`, `data/normalized/` and
+  the three split files. Do not treat this repository as an open-licence Bible
+  corpus — see [`LICENSE_NOTES.md`](LICENSE_NOTES.md),
+  [`metadata/sources.json`](metadata/sources.json) and [`NOTICE`](NOTICE).

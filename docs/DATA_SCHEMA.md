@@ -238,7 +238,7 @@ plus the ordered `books` array (code + display name) used to build the mapping.
 | `quality_report.md` | Human-readable release report (statistics, alignment states, missing-verse policy, spot-check evidence) |
 | `quality_report.json` | Same content, machine-readable (`sources`, `metrics`, `verification`, `spot_checks`, `split_manifest`, `checksums`) |
 | `quality_report.csv` | Counter / value / description table |
-| `checksums.sha256` | 2,386 `sha256sum`-format lines: 2,378 raw chapter captures + 8 final JSONL artifacts |
+| `checksums.sha256` | 7 `#` provenance comment lines + **2,386** `sha256sum`-format entries (2,393 lines total): 2,378 raw chapter captures + 8 final JSONL artifacts. `sha256sum -c` skips the comments — see [`PIPELINE.md`](PIPELINE.md) |
 
 ## 13. `logs/*` — *committed*
 

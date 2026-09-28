@@ -123,7 +123,13 @@ python -m bible_scraper all            # discover → collect → normalize → 
 or stage by stage, as documented in [`PIPELINE.md`](PIPELINE.md). Results land in
 the `data/` paths listed in §3; `reports/checksums.sha256` tells you whether you
 reproduced the release byte-for-byte (subject to any changes upstream publishers
-make after the retrieval window).
+make after the retrieval window):
+
+```bash
+shasum -a 256 -c reports/checksums.sha256      # macOS
+sha256sum    -c reports/checksums.sha256       # GNU coreutils
+# -> 2,386 OK, 0 FAILED   (the 7 '#' header lines are skipped automatically)
+```
 
 Collection for this release ran `2026-09-27T10:51:05Z → 2026-09-27T14:09:22Z`.
 

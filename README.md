@@ -200,8 +200,12 @@ python -m bible_scraper {discover,collect,normalize,align,verify,report,all} \
 `verify` is the release gate: it recomputes counts, checks schema, uniqueness, audit↔corpus
 reconciliation, whole-book splits and exclusion of uncertain rows, and runs live spot checks.
 It exits non-zero unless `ok` and `complete` are both true. `report` then writes the quality
-reports and `reports/checksums.sha256` (2,386 entries). Checksums are regenerated only when a
-covered file actually changes.
+reports and `reports/checksums.sha256` (7 provenance comment lines + 2,386 entries).
+Checksums are regenerated only when a covered file actually changes. Verify any copy with:
+
+```bash
+sha256sum -c reports/checksums.sha256    # or: shasum -a 256 -c …  -> 2,386 OK, 0 FAILED
+```
 
 ### Directory structure
 

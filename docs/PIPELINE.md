@@ -130,9 +130,21 @@ The release is `complete` only when every check passes with `ok` and
 
 ### Checksums
 
-`reports/checksums.sha256` covers 2,386 files: all 2,378 raw chapter captures plus
-the 8 final JSONL artifacts, in `sha256sum` format. The corpus digest is the
-sha256 of `data/aligned/thadou_kuki_niv_parallel.jsonl`:
+`reports/checksums.sha256` holds **2,386 entries** covering all 2,378 raw chapter
+captures plus the 8 final JSONL artifacts (5 aligned + 2 normalized + 1 audit),
+in `sha256sum` format. A 7-line `#` provenance header (generated_at, version,
+source and chapter URL templates, entry counts) sits above them, so the file is
+2,393 lines long — `wc -l` counts the header, `sha256sum -c` skips it.
+
+Verify a local copy:
+
+```bash
+shasum -a 256 -c reports/checksums.sha256      # macOS
+sha256sum    -c reports/checksums.sha256       # GNU coreutils
+# -> 2,386 OK, 0 FAILED  (verified for this release)
+```
+
+The corpus digest is the sha256 of `data/aligned/thadou_kuki_niv_parallel.jsonl`:
 
 ```
 587e55fc710f29f19cad93c0caf7774fb5f7655f25fc488db0cd330781a6aeea
